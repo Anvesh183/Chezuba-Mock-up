@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media-queries.css" />
+    <title>Chezuba Mock-up</title>
+  </head>
+  <body>
+    <section class="home-page">
+      <section class="left-section">
+        <!----------------------------------SIDE-BAR SECTION------------------------------------->
+
+        <section class="side-bar nav-open">
+          <div class="logo">
+            <img src="../img/chezuba logo.png" alt="logo" />
+          </div>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="../img/Sukhendra photo 1.png" alt="user-photo" />
+            </div>
+            <div class="profile-name">
+              <p class="first-name">Sukhendra</p>
+              <p class="last-name">Rompally</p>
+            </div>
+          </div>
+          <div class="navigation">
+            <ul class="nav-links">
+              <li class="nav-link"><a href="#">Home</a></li>
+              <li class="nav-link"><a href="#">Calendar</a></li>
+              <li class="nav-link"><a href="#">Projects</a></li>
+              <li class="nav-link"><a href="#">My Applications</a></li>
+              <li class="nav-link extras-link">
+                <a href="#">Extras</a>
+                <button class="arrow">
+                  <img src="../img/arrow.svg" alt="arrow" />
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+        </section>
+      </section>
+
+      <!-- --------------------RIGHT-SECTION--------------------------- -->
+      <section class="right-section">
+        <!-------------------------------ACTIVITY CALENDAR SECTION------------------------------------->
+        <section class="activity-calendar-container">
+          <div class="activity-calendar">
+            <div class="header">
+              <div class="section-heading">Activity Calendar</div>
+              <button class="view-all-btn">View all</button>
+            </div>
+            <div class="tasks">
+              <div class="day">
+                <div class="day-name">Today</div>
+                <button class="task-btn">Donate Books</button>
+              </div>
+              <div class="day">
+                <div class="day-name">Tommorow</div>
+                <button class="task-btn">Donate Books <br />Round 2</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!----------------------------------USER ACTIVITY SECTION------------------------------------->
+
+        <section class="user-activity-container">
+          <div class="user-activity">
+            <div class="header">
+              <p class="heading">User Activity</p>
+            </div>
+            <div class="activity-display">
+              <div class="activity-wheel">
+                <img src="./img/progress-circle.svg" alt="" />
+                <div class="activity-content">
+                  <p class="time">0 hrs</p>
+                  <br />
+                  <p class="content">Volunteer Experience</p>
+                </div>
+              </div>
+              <div class="user-activity-avatar">
+                <img src="../img/Avatars.png" alt="user-avatar" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!----------------------------------LEADERBOARD SECTION------------------------------------->
+
+        <section class="leaderboard-container">
+          <div class="leaderboard">
+            <div class="header">
+              <div class="section-heading">Leaderboard</div>
+              <button class="view-all-btn">View all</button>
+            </div>
+            <div class="list-items">
+              <div class="item item-background">
+                <div class="number">1</div>
+                <div class="name">Fatima Nadia</div>
+                <div class="hours">360 hrs</div>
+              </div>
+              <div class="item item-background">
+                <div class="number">1</div>
+                <div class="name">Fatima Nadia</div>
+                <div class="hours">360 hrs</div>
+              </div>
+              <div class="item item-background">
+                <div class="number">1</div>
+                <div class="name">Fatima Nadia</div>
+                <div class="hours">360 hrs</div>
+              </div>
+              <div class="item item-background">
+                <div class="number">1</div>
+                <div class="name">Fatima Nadia</div>
+                <div class="hours">360 hrs</div>
+              </div>
+              <div class="item item-background">
+                <div class="number">1</div>
+                <div class="name">Fatima Nadia</div>
+                <div class="hours">360 hrs</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ---------------------------MY APPLICATIONS SECTION------------------------------------- -->
+        <section class="my-application-section">
+          <div class="my-application">
+            <div class="header">
+              <div class="section-heading">My Applications</div>
+              <button class="view-all-btn">View all</button>
+            </div>
+            <div class="list">
+              <div class="btn">
+                <button class="list-btn">
+                  <p class="title">Donate Books</p>
+                  <p class="status">Pending</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-----------------------------------TESTIMONIALS SECTION-------------------------------->
+
+        <section class="testimonial-container">
+          <div class="testimonial">
+            <div class="heading">Testimonials</div>
+            <div class="content">
+              The Vaccination awareness session conducted by by APL CSR Team
+              motivated me to educate people around me I encouraged 10 people to
+              get vaccinated and another 20 people to get registered on COWIN
+              portal. Educating them about the importance and benifits of
+              COVID-19 vaccination made them feel more confident and safe to
+              take right action
+            </div>
+            <div class="author">- Shivani Vishwadev</div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

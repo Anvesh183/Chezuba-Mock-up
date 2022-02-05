@@ -1,0 +1,480 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fafdff;
+  padding: 30px;
+}
+
+/*******************************HOME-PAGE******************************/
+
+.home-page {
+  display: flex;
+  column-gap: 20px;
+}
+
+.right-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+}
+/*************************************SIDE-BAR SECTION**************************************** */
+
+.side-bar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  row-gap: 70px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 11.5px;
+}
+
+.profile-image img {
+  border-radius: 50%;
+}
+
+.profile .profile-name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #bb421c;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 27px;
+}
+
+.nav-link a:link,
+.nav-link a:visited {
+  color: #d6b7b7;
+  text-decoration: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.nav-link a:hover,
+.nav-link a:active {
+  color: #2d0cfb;
+}
+
+.extras-link {
+  display: flex;
+  align-items: center;
+  /* column-gap: 3px; */
+}
+
+.arrow {
+  margin: 2px 0 0 5px;
+  width: 15px;
+  height: 15px;
+  color: #b5a8a8;
+  /* transform: rotate(90deg); */
+}
+
+.extras-link button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/*MOBILE*/
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 48px;
+  width: 48px;
+  color: #000000;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/******************************** RIGHT SECTION********************************** */
+
+/********************************ACTIVITY CALENDAR SECTION*************************************/
+
+.activity-calendar-container {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 20px rgba(105, 74, 74, 0.25);
+  border-radius: 20px;
+  padding: 34px;
+}
+
+.activity-calendar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
+.activity-calendar .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-calendar .section-heading {
+  color: #000000;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.activity-calendar .view-all-btn {
+  border: none;
+  background-color: #ffffff;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3px;
+  color: #87abe8;
+}
+
+.activity-calendar .view-all-btn:hover {
+  cursor: pointer;
+}
+
+.activity-calendar .tasks {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.activity-calendar .tasks .day {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.activity-calendar .day .task-btn {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background: linear-gradient(
+    90.27deg,
+    #494fde 3.88%,
+    rgba(73, 97, 222, 0.39) 134.31%
+  );
+  border-radius: 14px;
+
+  /* text */
+  text-align: start;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+/*************************************USER ACTIVITY SECTION**************************************** */
+
+.user-activity-container {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 20px rgba(105, 74, 74, 0.25);
+  border-radius: 20px;
+  padding: 34px;
+}
+
+.user-activity {
+  display: flex;
+  flex-direction: column;
+  row-gap: 19px;
+}
+
+.user-activity .heading {
+  color: #000000;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.activity-display {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 31px;
+}
+
+.activity-wheel {
+  position: relative;
+}
+
+.activity-content {
+  position: absolute;
+  top: 42px;
+  left: 55px;
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-wheel .time {
+  text-align: center;
+  color: #000000;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 62px;
+}
+
+.activity-wheel .content {
+  color: #000000;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  max-width: 107px;
+  margin-top: -15px;
+  text-align: center;
+}
+
+/*************************************LEADERBOARD SECTION**************************************** */
+
+.leaderboard-container {
+  grid-row: 2 / span 2;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 20px rgba(105, 74, 74, 0.25);
+  border-radius: 20px;
+  padding: 34px;
+}
+
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  row-gap: 43px;
+}
+
+.leaderboard .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leaderboard .section-heading {
+  color: #000000;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.leaderboard .view-all-btn {
+  border: none;
+  background-color: #ffffff;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3px;
+
+  color: #87abe8;
+}
+
+.leaderboard .view-all-btn:hover {
+  cursor: pointer;
+}
+
+.leaderboard .list-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12.57px;
+}
+
+.leaderboard .item {
+  display: flex;
+  column-gap: 30px;
+}
+
+.leaderboard .item .name {
+  flex-grow: 1;
+}
+
+.leaderboard .item-background {
+  padding: 10px;
+  background: linear-gradient(
+    90.27deg,
+    #de496e 3.88%,
+    rgba(222, 73, 110, 0.39) 134.31%
+  );
+  border-radius: 14px;
+}
+
+.leaderboard .number,
+.leaderboard .name,
+.leaderboard .hours {
+  color: #ffffff;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+/* *********************************MY APPLICATION SECTION************************ */
+
+.my-application-section {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 20px rgba(105, 74, 74, 0.25);
+  border-radius: 20px;
+  padding: 34px;
+}
+
+.my-application {
+  display: flex;
+  flex-direction: column;
+  row-gap: 43px;
+}
+
+.my-application .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-application .section-heading {
+  color: #000000;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.my-application .view-all-btn {
+  border: none;
+  background-color: #ffffff;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3px;
+
+  color: #87abe8;
+}
+
+.my-application .view-all-btn:hover {
+  cursor: pointer;
+}
+
+.list-btn {
+  width: 100%;
+  border: none;
+  /* margin: 0 10px 0 10px; */
+  padding: 10px;
+  background: linear-gradient(
+    90.27deg,
+    #c4d84b 3.88%,
+    rgba(196, 216, 75, 0.22) 134.31%
+  );
+  border-radius: 14px;
+
+  /* text */
+  text-align: start;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  /*flex*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-btn .title {
+  color: #ffffff;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.list-btn .status {
+  color: #a35e5e;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*************************************TESTIMONIALS SECTION**************************************** */
+
+.testimonial-container {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 20px rgba(105, 74, 74, 0.25);
+  border-radius: 20px;
+}
+
+.testimonial .heading {
+  padding: 32px 0 20px 25px;
+  color: #000000;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.testimonial .content {
+  padding: 0 35px 5px 37px;
+  color: #000000;
+  font-family: Poppins;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.testimonial .author {
+  padding: 0 35px 20px 37px;
+
+  text-align: end;
+}
