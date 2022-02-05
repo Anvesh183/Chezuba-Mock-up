@@ -17,14 +17,26 @@
   }
 
   .btn-mobile-nav {
+    position: relative;
     display: block;
     z-index: 2;
     justify-self: flex-end;
   }
 
-  .profile-name,
-  .profile-image {
+  .profile-name {
     display: none;
+  }
+
+  .profile {
+    position: relative;
+  }
+
+  .profile-image img {
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    top: 20px;
+    right: -140px;
   }
 
   .navigation {
@@ -67,7 +79,7 @@
   .nav-links {
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 50px;
   }
 
   .nav-link a:link,
