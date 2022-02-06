@@ -129,9 +129,17 @@ body {
 }
 
 .activity-calendar {
+  transform: all 0.4s;
+
   display: flex;
   flex-direction: column;
   row-gap: 35px;
+}
+
+.activity-calendar:hover {
+  /* transform: translate(-0.3rem); */
+  transform: scale(0.99);
+  cursor: pointer;
 }
 
 .activity-calendar .header {
@@ -215,6 +223,12 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 19px;
+  transform: all 0.4s;
+}
+
+.user-activity:hover {
+  transform: scale(0.99);
+  cursor: pointer;
 }
 
 .user-activity .heading {
@@ -280,6 +294,12 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 43px;
+  transform: all 0.4s ease-in;
+}
+
+.leaderboard:hover {
+  transform: scale(0.99);
+  cursor: pointer;
 }
 
 .leaderboard .header {
@@ -366,6 +386,12 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 43px;
+  transform: all 0.4s;
+}
+
+.my-application:hover {
+  transform: scale(0.99);
+  cursor: pointer;
 }
 
 .my-application .header {
@@ -451,6 +477,15 @@ body {
   background-color: #ffffff;
   box-shadow: 5px 5px 20px rgba(105, 74, 74, 0.25);
   border-radius: 20px;
+}
+
+.testimonial {
+  transform: all 0.4s;
+}
+
+.testimonial:hover {
+  transform: scale(0.99);
+  cursor: pointer;
 }
 
 .testimonial .heading {
